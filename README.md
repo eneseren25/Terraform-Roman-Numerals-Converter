@@ -52,16 +52,11 @@ Input       Output
 4500        Warning with "Not Valid! Please enter a number between 1 and 3999, inclusively."
 Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, inclusively."
 ```
-   
-- The app created by you and template folder, you are gonna deploy web environment using Python's Flask framework.
-
-
-## Project Skeleton 
 
 ```
-## Expected Outcome
-
-![Project 001 Snapshot](project-001-snapshot.png)
+## Project Skeleton 
+```
+![Project 001 Snapshot](project-001.png)
 
 ### At the end of the project, following topics are to be covered;
 
@@ -110,3 +105,5 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 - 
 
 - [AWS Cli User Guide](https://docs.aws.amazon.com/cli/latest/)
+
+```
