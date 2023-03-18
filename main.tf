@@ -46,12 +46,13 @@ resource "aws_security_group" "aws_sec" {
   }
 
   dynamic "ingress" {
-    for_each = val.aws_sec_grop
-
+    for_each = var.aws_sec_grop
+    iterator = port
     content {
       description = "HTTP,SSH,HTTPS"
-      from_port   = val.aws_sec_grop
-      to_port     = val.aws_sec_grop
+      from_port   = port.value
+      to_port     = port.value
+      protocol = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
     }
   }
@@ -82,9 +83,9 @@ resource "aws_instance" "aws_inst1" {
   pip3 install flask
   yum install git -y
   cd /home/ec2-user
-  wget -P templates https://raw.githubusercontent.com/serdarcw/cli_deneme/master/templates/index.html
-  wget -P templates https://raw.githubusercontent.com/serdarcw/cli_deneme/master/templates/result.html
-  wget https://raw.githubusercontent.com/serdarcw/cli_deneme/master/app.py
+  wget -P templates https://raw.githubusercontent.com/eneseren25/Terraform-Roman-Numerals-Converter/main/templates/index.html
+  wget -P templates https://raw.githubusercontent.com/eneseren25/Terraform-Roman-Numerals-Converter/main/templates/result.html
+  wget https://raw.githubusercontent.com/eneseren25/Terraform-Roman-Numerals-Converter/main/app.py
   python3 app.py
 
   EOF

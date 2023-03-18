@@ -1,5 +1,5 @@
 output "aws_instance_ip" {
-    value = aws_instance.aws_inst1.*.ip_address
+    value = aws_instance.aws_inst1.*.public_ip
 }
 
 output "aws_sec_id" {
