@@ -1,6 +1,6 @@
-# Project-001 : Roman Numerals Converter Application (Python Flask) deployed on AWS EC2 with Cloudformation and AWS CLI
+# Project-001 : Roman Numerals Converter Application (Python Flask) deployed on AWS EC2 with Terraform and AWS CLI
 ## Description
-The Roman Numerals Converter Application aims to convert the given number to the Roman numerals. The application is to be coded in Python and deployed as a web application with Flask on AWS Elastic Compute Cloud (EC2) Instance using AWS Cloudformation and CLI Services. 
+The Roman Numerals Converter Application aims to convert the given number to the Roman numerals. The application is to be coded in Python and deployed as a web application with Flask on AWS Elastic Compute Cloud (EC2) Instance using Terraform and CLI Services. 
 
 ## Problem Statement
 
@@ -55,41 +55,10 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
    
 - The app created by you and template folder, you are gonna deploy web environment using Python's Flask framework.
 
-- You are requested to push your program to the project repository on the Github and deploy your solution in the development environment on AWS EC2 Instance using AWS Cloudformation Service to showcase your project. In the development environment, you'll configure your Cloudformation template using the followings,
-
-   - The application stack should be created with new AWS resources. 
-
-   - The application stack should take the name of your Key Pair as a parameter from the user;
-   
-   - The application should run on Amazon Linux 2 EC2 Instance
-
-   - EC2 Instance type can be configured as `t2.micro`.
-
-   - Latest AWS Linux AMI should be used for template.
-
-   - Instance launched by Cloudformation should be tagged `Web Server of StackName` 
-
-   - The Web Application should be accessible via web browser and terminal from anywhere.
-
-   - The Application files should be downloaded from Github repo and deployed on EC2 Instance using user data script within cloudformation template. 
-
-   - Roman Numerals Converter Application Website URL should be given as output by Cloudformation Service, after the stack created.
-
-- Lastly, try to deploy same infrastructure using AWS CLI commands to showcase your project. 
 
 ## Project Skeleton 
 
 ```
-001-roman-numerals-converter (folder)
-|----cli.sh            # To be delivered by students (CLI commands)
-|----readme.md         # Given to the students (Definition of the project)          
-|----cfn-template.yml  # To be delivered by students (Cloudformation template)
-|----app.py            # Given to the students (Definition of the project)          
-|----templates
-        |----index.html  # Given to the students (HTML template)
-        |----result.html # Given to the students (HTML template)
-```
-
 ## Expected Outcome
 
 ![Project 001 Snapshot](project-001-snapshot.png)
@@ -108,9 +77,8 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
 - AWS Security Groups Configuration
 
-- AWS Cloudformation Service
+- Terraform colubration
 
-- AWS Cloudformation Template Design
 
 - AWS CLI Service
 
@@ -118,23 +86,6 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
 - Git & Github for Version Control System
 
-### At the end of the project, students will be able to;
-
-- improve coding skills using iterables(dict), operators, for-loop, if statements and functions within Python
-
-- improve web programming skills using HTTP GET/POST methods, template formatting, importing packages within Python Flask Framework
-
-- improve bash scripting skills using `user data` section in Cloudformation to install and setup web application on EC2 Instance
-
-- configure AWS EC2 Instance and Security Groups.
-
-- configure Cloudformation template to use AWS Resources.
-
-- use AWS Cloudformation Service to launch stacks.
-
-- use AWS Cli to launch same stacks.
-
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
 ## Steps to Solution
   
@@ -144,17 +95,11 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
 - Step 3: Copy the Roman Numerals Converter Application in Python
 
-- Step 4: Prepare a cloudformation template to deploy your app on EC2 Instance
+- Step 4: Prepare a main.tf template to deploy 
 
 - Step 5: Push your application into your own public repo on Github
 
-- Step 6: Deploy your application on AWS Cloud using Cloudformation template to showcase your app within your team.
-
-- Step 7: Deploy your application on AWS Cloud using AWS Cli to showcase your app within your team.
-
 ## Notes
-
-- Customize the application by hard-coding your name for the `developer_name` variable within html templates.
 
 ## Resources
 
